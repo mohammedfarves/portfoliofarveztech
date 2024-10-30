@@ -747,7 +747,7 @@ header {
         line-height:50px;
     } 
     .container .right-side{
-        width: 50%;
+        width: 0%;
     }
     .navigation .navbar{
         position: unset;
