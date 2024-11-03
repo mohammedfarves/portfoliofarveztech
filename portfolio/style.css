@@ -749,7 +749,7 @@ header {
     .container .left-side{
    position: absolute;
    top:50%;
-   transform: translate(-75%,65%);
+   transform: translate(-75%,45%);
    left:50%;
     }
 .container .right-side{
@@ -759,7 +759,7 @@ header {
         position: absolute;
 top:46% ;
 left:200%;
-transform: translate(-20%,-10%);
+transform: translate(-30%,-10%);
 
 }
 .top {
@@ -801,7 +801,7 @@ transform: translate(-50%,-50%);
     top: 50%;
     left:50%;
     transform: translate(-50%,-30%);
-    margin-top: 20px;
+    margin-top: 5px;
 
 }
 
@@ -811,13 +811,13 @@ transform: translate(-50%,-50%);
     gap: 1px;
     left:50%;
     margin-top: -10px;
-    transform: translate(-50%,5%);
+    transform: translate(-50%,10%);
 }
 .portfolio{
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%,190%);
+    transform: translate(-50%,210%);
 
 
 }
@@ -862,7 +862,7 @@ transform: translate(-50%,-50%);
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%,270%);
+transform: translate(-50%,300%);
 }
 .skill .content h1{
     font-size: 20px;
@@ -931,7 +931,7 @@ transform: translate(-50%,270%);
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%,335%);
+transform: translate(-50%,370%);
 }
 
 .contact .contact-container .contact-leftside h1 {
@@ -1056,7 +1056,7 @@ transform: translate(-50%,335%);
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%,2250%);
+   transform: translate(-50%,2500%);
 }
 
 .footer .nav ul {
