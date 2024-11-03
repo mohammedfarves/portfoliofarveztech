@@ -742,93 +742,95 @@ header {
 }
 @media screen and (max-width: 600px)
  {
-    .container .left-side h1{
-        font-size: 38px;
+.container .left-side h1{
+        font-size: 33px;
         line-height:50px;
     } 
-    .container .right-side{
-        width: 0%;
+    .container .left-side{
+   position: absolute;
+   top:50%;
+   transform: translate(-75%,65%);
+   left:50%;
     }
-    .navigation .navbar{
-        position: unset;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 50px;
-        box-sizing: border-box;
+.container .right-side{
+        display: none;
+    }
+.navigation .navbar{
+        position: absolute;
+top:46% ;
+left:200%;
+transform: translate(-20%,-10%);
+
 }
 .top {
     position: unset;
-    margin-top: 30px;
     font-size: 15px;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5 50px;
 }
 .top .social-icons {
-    display: flex;
-    margin: 10px 50px;
-    gap: 25px;
-    list-style: none;
+    position: absolute;
+    top:12% ;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 .top .logo{
-    padding-left: 70px;
+position: absolute;
+top:5% ;
+left:50%;
+transform: translate(-50%,-50%);
 }
 .top button{
-    margin-left: 125px;
-    width: 100px;
-    height: 30px;
-    margin-top: 5px;
+position: absolute;
+top:20%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
 .about .experience .topic{
-    margin-top: -100px;
     font-size: 20px;
     text-align: center;
-
+    margin-top:-65%;
    
 }
 .about .education .topic{
     font-size: 20px;
-    margin-top: -300px;
     text-align: center;
+    margin-top: -65px;
 }
 .about .experience .list-experience {
-    display: inline-block;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-    height: 50px;
-    margin-top: 2px;
-    padding-top: px;
-    font-size: 20px;
+    position: absolute;
+    gap: 1px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-30%);
+    margin-top: 20px;
 
 }
 
 .about .education .list-education {
-    display: inline-block;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-    margin-top: 4px;
+    position: absolute;
+    top:50%;
+    gap: 1px;
+    left:50%;
+    margin-top: -10px;
+    transform: translate(-50%,5%);
 }
 .portfolio{
-    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,190%);
+
+
 }
 .portfolio .projects img {
-    width: 350px;
-    height: 160px;
+    width:290px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     filter: saturate(50%);
     transition: .5s;
 }
 .about .item {
-    width: 350px;
+    width: 320px;
     height: 80px;
     margin-top: 10px;
     margin-bottom: ;
@@ -857,8 +859,10 @@ header {
     margin-top: 50px;
 }
 .skill {
-    margin-top: 50px;
-
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,270%);
 }
 .skill .content h1{
     font-size: 20px;
@@ -924,15 +928,10 @@ header {
    text-align: center;
 }
 .contact {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 20px;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999999;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,335%);
 }
 
 .contact .contact-container .contact-leftside h1 {
@@ -986,7 +985,7 @@ header {
 }
 
 .contact .contact-container .contact-leftside form .message {
-    width: 300px;
+    width: 192px;
     height: 150px;
     background: var(--secondary-color);
     outline: none;
@@ -1021,20 +1020,22 @@ header {
 
 /* contact right side */
 .contact .contact-container .contact-rightside {
-    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,280%);
 }
 
 .contact .contact-container .contact-rightside ul {
     list-style: none;
     display: inline-block;
-    flex-direction: column;
-    gap: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-40%, 240%);
 }
 
-.contact .contact-container .contact-rightside ul li {
-    display: flex;
-    align-items: center;
-}
+
 
 .contact .contact-container .contact-rightside ul li i {
     font-size: 5px;
@@ -1050,27 +1051,12 @@ header {
     z-index: 1;
 }
 
-.contact .contact-container .contact-rightside ul li span {
-    width: 5px;
-    height: 5px;
-    font-size: 5px;
-    border-radius: 50px;
-    background: var(--secondary-color);
-    margin-left: -20px;
-    z-index: -1;
-    padding-left: 25px;
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
-    text-transform: uppercase;
 }
 .footer {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,2250%);
 }
 
 .footer .nav ul {
@@ -1080,16 +1066,12 @@ header {
 }
 
 .footer .nav ul li a {
-    font-size: 5px;
+    font-size: 1%;
     text-transform: uppercase;
     color: var(--text-color);
     text-decoration: none;
-    letter-spacing: 0.1rem;
+    letter-spacing: -1px;
     transition: 0.3s;
-}
-
-.footer .nav ul li a:hover {
-    color: var(--primary-color2);
 }
 
 .footer hr {
@@ -1098,19 +1080,5 @@ header {
     border-width: 1px;
     border-style: solid;
     animation: borderAnimation 8s linear infinite;
-    margin-top: 30px;
-}
-
-.footer .copyright {
-    color: #bab3bd;
-    margin-top: 20px;
-    text-transform: capitalize;
-}
-
-.footer .copyright span {
-    text-transform: uppercase;
-    color: var(--primary-color1);
-    font-weight: 600;
-}
-
+    margin-top: 3cqmax;
 }
